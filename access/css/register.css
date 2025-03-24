@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+body{
+    background-image: url(https://img.freepik.com/premium-photo/milk-ripple-splash-background-3d-rendering_36845-261.jpg?uid=R192179016&ga=GA1.1.118575099.1742221969&semt=ais_keywords_boost);
+}
+img{
+    width: 200px;
+    padding-left: 120px;
+}
+.form-contain{
+    width: 320px;
+    height: 550px;
+    box-shadow: 0 0 10px gray;
+    background-color: rgb(243, 242, 240);
+    border-radius: 15px;
+}
+h2{
+    padding-top: 20px;
+    text-align: center;
+}
+.form{
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 37px;
+    font-weight: bold;
+}
+button{
+    background-color: rgb(2, 3, 3);
+    color: aliceblue;
+    border-radius: 5px;
+    width: 280px;
+    height: 40px;
+    margin-top: 15px;
+    font-size: medium;
+}
+button:hover{
+    background-color: rgb(134, 216, 234);
+}
+.dk a{
+    text-decoration: none;
+    color: rgb(17, 7, 131);
+}
+.dk a:hover{
+    color: black;
+}
+input{
+    border-radius: 5px;
+    width: 280px;
+    height: 40px;
+}
