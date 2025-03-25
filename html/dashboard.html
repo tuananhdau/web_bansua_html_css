@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Quản Lý</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Quản Lý</h2>
+        <ul>
+            <li><a href="#" onclick="showSection('products')">Sản phẩm</a></li>
+            <li><a href="#" onclick="showSection('revenue')">Doanh thu</a></li>
+            <li><a href="#" onclick="showSection('orders')">Lịch sử đặt hàng</a></li>
+            <li><a href="#" onclick="showSection('customers')">Khách hàng</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>Trang Quản Lý</h1>
+        
+        <!-- Quản lý sản phẩm -->
+        <div id="products" class="section">
+            <h2>Quản lý sản phẩm</h2>
+            <input type="text" id="productName" placeholder="Nhập tên sản phẩm">
+            <input type="number" id="productPrice" placeholder="Giá">
+            <button onclick="addProduct()">Thêm sản phẩm</button>
+            <ul id="productList"></ul>
+        </div>
+
+        <!-- Doanh thu -->
+        <div id="revenue" class="section" style="display: none;">
+            <h2>Doanh thu</h2>
+            <p>Tổng doanh thu: <b id="totalRevenue">0</b> VND</p>
+        </div>
+
+        <!-- Lịch sử đặt hàng -->
+        <div id="orders" class="section" style="display: none;">
+            <h2>Lịch sử đặt hàng</h2>
+            <ul id="orderList">
+                <li>Đơn hàng #1001 - 500.000 VND</li>
+                <li>Đơn hàng #1002 - 300.000 VND</li>
+            </ul>
+        </div>
+
+        <!-- Danh sách khách hàng -->
+        <div id="customers" class="section" style="display: none;">
+            <h2>Danh sách khách hàng</h2>
+            <ul id="customerList">
+                <li>Nguyễn Văn A</li>
+                <li>Trần Thị B</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
