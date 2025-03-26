@@ -122,7 +122,10 @@ body {
 .menu a:hover {
     color: #b32222;
     border-bottom: 2px solid #a01717;
+    transition: transform 0.3s;
+
 }
+
 .banner {
     position: relative;
     width: 100%;
@@ -313,4 +316,194 @@ z-index: 999;
 
 .scroll-to-top:hover {
 background: #a01717;
+}
+footer {
+    background: #f8f8f8;
+    font-family: Arial, sans-serif;
+}
+
+/* Phần đăng ký nhận tin */
+.footer-top {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-bottom: 2px solid #b01c1c;
+}
+
+.footer-top h3 {
+    color: #b01c1c;
+    margin-bottom: 5px;
+}
+
+.footer-top p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.subscribe-form input {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.subscribe-form button {
+    padding: 10px 15px;
+    background: #b01c1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.subscribe-form button:hover {
+    background: #900;
+}
+
+/* Phần chính của footer */
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px 0;
+}
+
+.footer-section {
+    width: 22%;
+}
+.footer-section img{
+    width: 80px;
+}
+.footer-section h3 {
+    color: #b01c1c;
+    border-bottom: 2px solid #b01c1c;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    color: #333;
+    font-size: 14px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #b01c1c;
+}
+
+.social-icons a {
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #2C2C2C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s linear;
+    float: left;
+    color: #000;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #b01c1c;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background: #ddd;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #333;
+    font-size: 14px;
+}
+.footer-top-subbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.footer-top-subs-title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.footer-top-subs-text {
+    font-size: 15px;
+    color: #888;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.form-ground {
+    margin-left: 50px;
+    line-height: 26px;
+    display: flex;
+}
+
+.form-ground-input,
+.form-ground-btn {
+    height: 50px;
+    border-radius: 99px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.form-ground-input {
+    padding: 0 20px;
+
+    border: 1px solid #ccc;
+    color: #4D5765;
+    outline: none;
+    font-size: 15px;
+}
+
+.form-ground-btn {
+    margin-left: 10px;
+    padding: 0 40px;
+    cursor: pointer;
+    background: #B5292F;
+    overflow: hidden;
+    outline: none;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+}
+.form-ground-btn:hover{
+    background-color: #900;
 }
