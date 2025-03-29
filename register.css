@@ -14,6 +14,14 @@
 body{
     background-image: url(https://img.freepik.com/premium-photo/milk-ripple-splash-background-3d-rendering_36845-261.jpg?uid=R192179016&ga=GA1.1.118575099.1742221969&semt=ais_keywords_boost);
 }
+.message{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    padding: 15px 10px;
+    background-color: white; 
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
 img{
     width: 200px;
     padding-left: 120px;
