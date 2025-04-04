@@ -12,12 +12,9 @@
    
 }
 body{
-    background-image: url(https://img.freepik.com/premium-photo/milk-ripple-splash-background-3d-rendering_36845-261.jpg?uid=R192179016&ga=GA1.1.118575099.1742221969&semt=ais_keywords_boost);
+    background-color: #e4e9f7;
 }
-img{
-    width: 200px;
-    padding-left: 120px;
-}
+
 .form-contain{
     width: 350px;
     height: 460px;

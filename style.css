@@ -231,7 +231,7 @@ margin-bottom: 30px;
 text-transform: uppercase;
 text-decoration: none;
 }
-
+z
 .menu-section h2 span {
 border-bottom: 3px solid #b32222;
 padding-bottom: 3px;
@@ -239,7 +239,7 @@ padding-bottom: 3px;
 
 .menu-grid {
 display: grid;
-
+grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 gap: 20px;
 }
 
@@ -505,4 +505,13 @@ footer {
 }
 .form-ground-btn:hover{
     background-color: #900;
+}
+.user-profile {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
