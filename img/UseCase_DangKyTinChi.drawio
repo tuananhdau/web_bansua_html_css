@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<mxfile host="app.diagrams.net" version="22.0.3" editor="deepai" type="device"><diagram name="Use Case">
+&lt;mxGraphModel dx="1220" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1"&gt;
+  &lt;root&gt;
+    &lt;mxCell id="0"/&gt;
+    &lt;mxCell id="1" parent="0"/&gt;
+    &lt;mxCell id="system" value="Biểu đồ Use Case hệ thống đăng ký tín chỉ sinh viên" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e8f4fd;strokeColor=#000000;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="200" y="60" width="960" height="720" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+
+    &lt;!-- Tác nhân --&gt;
+    &lt;mxCell id="student" value="Sinh viên" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="40" y="200" width="40" height="80" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="teacher" value="Giảng viên" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="40" y="400" width="40" height="80" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="faculty" value="Khoa/Bộ môn" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="1240" y="250" width="40" height="80" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="training" value="Phòng đào tạo" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;" vertex="1" parent="1"&gt;
+      &lt;mxGeometry x="1240" y="450" width="40" height="80" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+
+    &lt;!-- Vùng chức năng: Quản lý sinh viên --&gt;
+    &lt;mxCell id="box1" value="Quản lý sinh viên" style="swimlane;fontStyle=1;fillColor=#d9eaf7;" vertex="1" parent="system"&gt;
+      &lt;mxGeometry x="60" y="40" width="250" height="200" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc1" value="Cập nhật thông tin cá nhân" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box1"&gt;
+      &lt;mxGeometry x="50" y="80" width="180" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc2" value="Xem kết quả học tập" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box1"&gt;
+      &lt;mxGeometry x="50" y="130" width="180" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+
+    &lt;!-- Vùng chức năng: Đăng ký học phần --&gt;
+    &lt;mxCell id="box2" value="Đăng ký học phần" style="swimlane;fontStyle=1;fillColor=#d9eaf7;" vertex="1" parent="system"&gt;
+      &lt;mxGeometry x="360" y="40" width="250" height="250" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc3" value="Đăng ký học phần" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box2"&gt;
+      &lt;mxGeometry x="40" y="60" width="170" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc4" value="Kiểm tra điều kiện tiên quyết" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box2"&gt;
+      &lt;mxGeometry x="40" y="110" width="170" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc5" value="Kiểm tra trùng lịch học" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box2"&gt;
+      &lt;mxGeometry x="40" y="160" width="170" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc6" value="Kiểm tra số tín chỉ hợp lệ" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box2"&gt;
+      &lt;mxGeometry x="40" y="210" width="170" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+
+    &lt;!-- Vùng chức năng: Quản lý lớp học phần --&gt;
+    &lt;mxCell id="box3" value="Quản lý lớp học phần" style="swimlane;fontStyle=1;fillColor=#d9eaf7;" vertex="1" parent="system"&gt;
+      &lt;mxGeometry x="60" y="280" width="250" height="200" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc7" value="Theo dõi số lượng SV đăng ký" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box3"&gt;
+      &lt;mxGeometry x="40" y="80" width="180" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc8" value="Thông báo thay đổi lớp học" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box3"&gt;
+      &lt;mxGeometry x="40" y="130" width="180" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+
+    &lt;!-- Vùng chức năng: Quản lý học phần --&gt;
+    &lt;mxCell id="box4" value="Quản lý học phần" style="swimlane;fontStyle=1;fillColor=#d9eaf7;" vertex="1" parent="system"&gt;
+      &lt;mxGeometry x="360" y="320" width="250" height="160" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc9" value="Cập nhật thông tin học phần" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box4"&gt;
+      &lt;mxGeometry x="40" y="60" width="170" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc10" value="Cập nhật điều kiện tiên quyết" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box4"&gt;
+      &lt;mxGeometry x="40" y="110" width="170" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+
+    &lt;!-- Vùng chức năng: Quản lý giảng viên --&gt;
+    &lt;mxCell id="box5" value="Quản lý giảng viên" style="swimlane;fontStyle=1;fillColor=#d9eaf7;" vertex="1" parent="system"&gt;
+      &lt;mxGeometry x="660" y="40" width="250" height="200" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc11" value="Phân công giảng viên" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box5"&gt;
+      &lt;mxGeometry x="40" y="80" width="170" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+    &lt;mxCell id="uc12" value="Quản lý lịch dạy" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="box5"&gt;
+      &lt;mxGeometry x="40" y="130" width="170" height="40" as="geometry"/&gt;
+    &lt;/mxCell&gt;
+  &lt;/root&gt;
+&lt;/mxGraphModel&gt;
+</diagram></mxfile>
